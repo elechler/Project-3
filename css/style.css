@@ -1,0 +1,69 @@
+/*=============================== FLEX BOXES ===============================*/
+.header-container {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid green;
+    background: steelblue;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    margin: 0 20px;
+}
+.title,
+.form-container,
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    border: 2px solid green;
+    background: white;
+    
+}
+
+/*=============================== GENERAL STYLES ===============================*/
+.body-container {
+    background: lightgrey;
+    border: 2px solid red;
+}
+
+h2 {
+    color: steelblue;
+}
+p {
+    padding: 0 20px;
+}
+/*=============================== DECORATIVE LINES  ===============================*/
+
+.title {
+    border-bottom: 4px double steelblue;
+    text-align: center;
+}
+ .nl-line {
+    border-bottom: 2px solid steelblue;
+ }
+
+
+
+
+/*=============================== FORM STYLES ===============================*/
+
+label {
+    color: black;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="list"],
+input[type="number"] {
+    background: lightgrey;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+button[type="submit"] {
+    background-color: royalblue;
+    color: white;
+  }
+  
