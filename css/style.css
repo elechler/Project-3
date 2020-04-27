@@ -1,4 +1,4 @@
-/*=============================== FLEX BOXES ===============================*/
+/*=============================== FLEX BOXES & CONTAINERS ===============================*/
 .header-container {
     display: flex;
     flex-direction: column;
@@ -19,12 +19,12 @@
     background: white;
     
 }
-
-/*=============================== GENERAL STYLES ===============================*/
 .body-container {
     background: lightgrey;
     border: 2px solid red;
 }
+
+/*=============================== GENERAL STYLES ===============================*/
 
 h2 {
     color: steelblue;
@@ -42,28 +42,36 @@ p {
     border-bottom: 2px solid steelblue;
  }
 
-
-
-
 /*=============================== FORM STYLES ===============================*/
-
+fieldset {
+    border: none;
+}
 label {
     color: black;
+    display: block;
 }
-
-
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 input[type="list"],
-input[type="number"] {
+input[type="number"],
+textarea,
+select {
     background: lightgrey;
     border-radius: 5px;
     margin: 15px;
+    width: 80%;
+    padding: 10px;
 }
-
+textarea {
+    background: lightgrey;
+}
 button[type="submit"] {
     background-color: royalblue;
     color: white;
+    width: 80%;
+    border-radius: 5px;
+    padding: 10px;
+
   }
   
