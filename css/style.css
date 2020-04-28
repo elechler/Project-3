@@ -1,29 +1,26 @@
 /*=============================== FLEX BOXES & CONTAINERS ===============================*/
+.body-container {
+    background: lightgrey;
+    border: 2px solid red;
+}
 .header-container {
-    display: flex;
-    flex-direction: column;
     background: #2d3944;
     text-transform: uppercase;
     color: white;
     text-align: center;
     margin: 0 20px;
+    padding: 10px;
+    border: 2px solid orange;
 }
 .title,
 .form-container,
 .footer-container {
-    display: flex;
-    flex-direction: column;
     margin: 0 20px;
     background: white;
-    padding: 0;
+    padding: 10px;
+    border: 2px solid yellow;
 }
-.body-container {
-    background: lightgrey;
-    border: 2px solid red;
-}
-
 /*=============================== GENERAL STYLES ===============================*/
-
 h2 {
     color: #2d3944;
     text-align: center;
@@ -37,7 +34,6 @@ p {
     margin: 0 0 20px 0;
 }
 /*=============================== DECORATIVE LINES  ===============================*/
-
 .title-line {
     border-top: 8px solid #2d3944;
     border-bottom: 4px solid #2d3944;
@@ -50,10 +46,8 @@ p {
  .nl-line {
     border-bottom: 4px solid #2d3944;
     width: 95%;
-    margin: 0 10px;
-    
+    margin: 15px 10px;
  }
-
 /*=============================== FORM STYLES ===============================*/
 fieldset {
     border: none;
@@ -65,42 +59,60 @@ legend,
     margin-left: 0;
 }
 label {
-    color: black;
-    display: block;
+    font-size: 1.1em;
+    margin: 10px;
+    line-height: 2em;
 }
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 input[type="list"],
-input[type="number"],
-textarea,
-#state-choice {
+textarea {
+    display: block;
     background: #eff0f1;
     border-radius: 5px;
-    margin: 10px 0;
+    margin: auto;
     width: 85%;
-    padding: 10px;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+}
+#state-choice {
+    display: block;
+    background: #eff0f1;
+    border-radius: 5px;
+    margin: auto;
+    width: 85%;
+    text-align: left;
+}
+#zip {
+    display: block;
+    width: 55%;
+    margin: 0;
 }
 ::placeholder {
     text-align: right;
     font-style: italic;
     color: grey;
 }
+input[type="checkbox"],
+input[type="radio"] {
+    margin: 10px;
+}
 textarea {
     height: 100px;
-}
-input[type="checkbox"] {
-    
+    margin: 10px;
 }
 button[type="submit"] {
+    display: block;
     background-color: #53bab4;
     color: white;
     width: 95%;
     border-radius: 5px;
     padding: 10px;
-    margin: auto;
+    margin: 20px auto;
   }
-
+/*=============================== FOOTER ===============================*/
   .main-footer {
       text-align: center;
       font-style: italic;
