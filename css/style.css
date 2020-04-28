@@ -2,8 +2,7 @@
 .header-container {
     display: flex;
     flex-direction: column;
-    border: 2px solid green;
-    background: steelblue;
+    background: #2d3944;
     text-transform: uppercase;
     color: white;
     text-align: center;
@@ -15,9 +14,8 @@
     display: flex;
     flex-direction: column;
     margin: 0 20px;
-    border: 2px solid green;
     background: white;
-    
+    padding: 0;
 }
 .body-container {
     background: lightgrey;
@@ -27,24 +25,44 @@
 /*=============================== GENERAL STYLES ===============================*/
 
 h2 {
-    color: steelblue;
+    color: #2d3944;
+    text-align: center;
+    font-size: 1.6em;
+    margin: 15px;
 }
 p {
     padding: 0 20px;
+    text-align: center;
+    font-size: 1.3em;
+    margin: 0 0 20px 0;
 }
 /*=============================== DECORATIVE LINES  ===============================*/
 
-.title {
-    border-bottom: 4px double steelblue;
-    text-align: center;
+.title-line {
+    border-top: 8px solid #2d3944;
+    border-bottom: 4px solid #2d3944;
+    border-right: none;
+    border-left: none;
+    height: 5px;
+    width: 95%;
+    margin: 0 10px;
 }
  .nl-line {
-    border-bottom: 2px solid steelblue;
+    border-bottom: 4px solid #2d3944;
+    width: 95%;
+    margin: 0 10px;
+    
  }
 
 /*=============================== FORM STYLES ===============================*/
 fieldset {
     border: none;
+}
+legend,
+.legend {
+    text-align: left;
+    padding-left: 0;
+    margin-left: 0;
 }
 label {
     color: black;
@@ -56,22 +74,35 @@ input[type="tel"],
 input[type="list"],
 input[type="number"],
 textarea,
-select {
-    background: lightgrey;
+#state-choice {
+    background: #eff0f1;
     border-radius: 5px;
-    margin: 15px;
-    width: 80%;
+    margin: 10px 0;
+    width: 85%;
     padding: 10px;
+}
+::placeholder {
+    text-align: right;
+    font-style: italic;
+    color: grey;
 }
 textarea {
-    background: lightgrey;
+    height: 100px;
+}
+input[type="checkbox"] {
+    
 }
 button[type="submit"] {
-    background-color: royalblue;
+    background-color: #53bab4;
     color: white;
-    width: 80%;
+    width: 95%;
     border-radius: 5px;
     padding: 10px;
-
+    margin: auto;
   }
-  
+
+  .main-footer {
+      text-align: center;
+      font-style: italic;
+      padding: 15px;
+  }
