@@ -1,7 +1,6 @@
-/*=============================== FLEX BOXES & CONTAINERS ===============================*/
+/*=============================== BOXES & CONTAINERS ===============================*/
 .body-container {
     background: lightgrey;
-    border: 2px solid red;
 }
 .header-container {
     background: #2d3944;
@@ -10,7 +9,6 @@
     text-align: center;
     margin: 0 20px;
     padding: 10px;
-    border: 2px solid orange;
 }
 .title,
 .form-container,
@@ -18,15 +16,21 @@
     margin: 0 20px;
     background: white;
     padding: 10px;
-    border: 2px solid yellow;
 }
-
-.form-container {
-    background: yellow;
-    margin: 0 20px;
-    padding: 10px;
-    border: 2px solid pink;
+/*=============================== DECORATIVE LINES  ===============================*/
+.title-line {
+    border-top: 8px solid #2d3944;
+    border-bottom: 4px solid #2d3944;
+    border-right: none;
+    border-left: none;
+    height: 5px;
+    margin: auto;
+    width: 95%;
 }
+ .nl-line {
+    border-bottom: 4px solid #2d3944;
+    margin: 10px 0;
+ }
 /*=============================== GENERAL STYLES ===============================*/
 h2 {
     color: #2d3944;
@@ -40,26 +44,10 @@ p {
     font-size: 1.3em;
     margin: 0 0 20px 0;
 }
-/*=============================== DECORATIVE LINES  ===============================*/
-.title-line {
-    border-top: 8px solid #2d3944;
-    border-bottom: 4px solid #2d3944;
-    border-right: none;
-    border-left: none;
-    height: 5px;
-    width: 95%;
-    margin: 0 10px;
-}
- .nl-line {
-    border-bottom: 4px solid #2d3944;
-    width: 95%;
-    margin: 15px 10px;
- }
 /*=============================== FORM STYLES ===============================*/
 fieldset {
     border: none;
 }
-legend,
 .legend {
     text-align: left;
     padding-left: 0;
@@ -70,65 +58,45 @@ label {
     margin: 10px;
     line-height: 2em;
 }
-.input-field {
-    display: block;
-    background: #eff0f1;
-    border-radius: 5px;
-    margin: auto;
-    width: 85%;
-    padding: 20px;
-    border: none;
-    cursor: pointer;
-}
-
-
-.custom-select {
-    background: pink;
-    width: 85%;
-    padding: 20px;
-    border-radius: 5px;
-    margin: auto;
-    display: block;
-    
-}
-
-#state-choice {
-    background: green;
-    border: none;
-    color: red;
-    
-}
-
-
-
-#zip {
-    display: block;
-    width: 55%;
-    margin: 0;
-}
 ::placeholder {
     text-align: right;
     font-style: italic;
     color: grey;
 }
-input[type="checkbox"],
-input[type="radio"] {
-    margin: 10px;
+textarea, 
+button,
+select,
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width : 95%;
+    padding: 20px;
+    display: block;
+    margin: auto;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: #eff0f1;
+    border-radius: 5px;
+    border: none;
+}
+#state-choice {
+    height: 58px;
+}
+#zip {
+    width: 55%;
+    margin-left: 10px;
 }
 textarea {
     height: 100px;
     margin: 10px;
 }
-button[type="submit"] {
-    display: block;
+button {
     background-color: #53bab4;
     color: white;
-    width: 95%;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 20px auto;
   }
-/*=============================== FOCUS & TRANSISTIONS ===============================*/
+/*=============================== FOCUS & TRANSISTIONS & HOVER ===============================*/
+#state-choice:focus,
+#zip:focus,
 textarea:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
@@ -140,13 +108,56 @@ input[type="email"]:hover,
 input[type="tel"]:hover,
 input[type="text"]:hover {
     background: #53bab4;
-    opacity: .5;
+    opacity: .75;
     transition-duration: 2s;
 }
-
+#state-choice:hover,
+#zip:hover {
+    background: #53bab4;
+    opacity: .75;
+    transition-duration: 2s;
+}
 /*=============================== FOOTER ===============================*/
   .main-footer {
       text-align: center;
       font-style: italic;
       padding: 15px;
   }
+  /*=============================== MEDIA QUERIES ===============================*/
+@media (min-width: 768px) {
+    .body-container {
+        background: white;
+    }
+    .header-container {
+        width: 100%;
+        margin: 0;
+    }
+    .title,
+    .form-container,
+    .footer-container {
+        margin: 0;
+        width: 100%;
+        padding: 0;
+    }
+    .form {
+        width: 70%;
+        margin: auto;
+    }
+    .title-line {
+        width: 70%;
+        margin: auto;
+    }
+    .nl {
+        width: 100%;
+    }
+
+#zip {
+    float: right;
+}
+
+
+}
+
+
+
+
