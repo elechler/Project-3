@@ -20,6 +20,13 @@
     padding: 10px;
     border: 2px solid yellow;
 }
+
+.form-container {
+    background: yellow;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid pink;
+}
 /*=============================== GENERAL STYLES ===============================*/
 h2 {
     color: #2d3944;
@@ -63,11 +70,7 @@ label {
     margin: 10px;
     line-height: 2em;
 }
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="list"],
-textarea {
+.input-field {
     display: block;
     background: #eff0f1;
     border-radius: 5px;
@@ -77,14 +80,27 @@ textarea {
     border: none;
     cursor: pointer;
 }
-#state-choice {
-    display: block;
-    background: #eff0f1;
+
+
+.custom-select {
+    background: pink;
+    width: 85%;
+    padding: 20px;
     border-radius: 5px;
     margin: auto;
-    width: 85%;
-    text-align: left;
+    display: block;
+    
 }
+
+#state-choice {
+    background: green;
+    border: none;
+    color: red;
+    
+}
+
+
+
 #zip {
     display: block;
     width: 55%;
@@ -112,6 +128,22 @@ button[type="submit"] {
     padding: 10px;
     margin: 20px auto;
   }
+/*=============================== FOCUS & TRANSISTIONS ===============================*/
+textarea:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus {
+    border: 4px dashed purple;
+}
+textarea:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover,
+input[type="text"]:hover {
+    background: #53bab4;
+    opacity: .5;
+    transition-duration: 2s;
+}
+
 /*=============================== FOOTER ===============================*/
   .main-footer {
       text-align: center;
