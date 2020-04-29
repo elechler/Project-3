@@ -150,12 +150,21 @@ input[type="text"]:hover {
     .nl {
         width: 100%;
     }
-
-#zip {
-    float: right;
-}
-
-
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    select,
+    input[type="text"], 
+    input[type="tel"], 
+    input[type="email"] {
+        float: right;
+        width: 60%;
+        margin: 10px;
+    }
+    
+/*==============LEFT OFF TRYING TO FIGURE OUT HOW TO GET LABELS TO THE LEFT OF THE INPUT FIELDS IN LINE WITH THEIR CORRESPONDING FIELD ===============================*/
 }
 
 
