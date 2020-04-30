@@ -19,6 +19,8 @@
 }
 .info-box {
     padding: 10px 0;
+    background: #53bab4;
+    border-radius: 5px;
 }
 /*=============================== DECORATIVE LINES  ===============================*/
 .title-line {
@@ -30,10 +32,10 @@
     margin: 15px auto;
     width: 95%;
 }
- .nl-line {
+.nl-line {
     border-bottom: 4px solid #2d3944;
     margin: 15px auto;
- }
+}
 /*=============================== GENERAL STYLES ===============================*/
 h2 {
     color: #2d3944;
@@ -46,6 +48,7 @@ p {
     text-align: center;
     font-size: 1.3em;
     margin: 0 0 20px 0;
+    color: lightgrey;
 }
 /*=============================== FORM STYLES ===============================*/
 fieldset {
@@ -85,7 +88,7 @@ textarea {
 button {
     background-color: #53bab4;
     color: white;
-  }
+}
 .legend {
     text-align: left;
     padding-left: 0;
@@ -94,35 +97,33 @@ button {
 label {
     font-size: 1.1em;
     margin: 10px;
-    line-height: 2em;
+    line-height: 2.3em;   
 }
-/*
 #zip {
     width: 55%;
     margin-left: 10px;
 }
-*/
-/*=============================== FOCUS & TRANSISTIONS & HOVER ===============================*/
-#state-choice:focus,
-#zip:focus,
+/*=============================== FOCUS , TRANSISTIONS & HOVER ===============================*/
 textarea:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
 input[type="text"]:focus {
     border: 4px dashed purple;
 }
+#state-choice:focus,
+#zip:focus {
+    border: 4px dashed purple;
+}
 textarea:hover,
 input[type="email"]:hover,
 input[type="tel"]:hover,
 input[type="text"]:hover {
-    background: #53bab4;
-    opacity: .75;
+    background: lightgrey;
     transition-duration: 2s;
 }
 #state-choice:hover,
 #zip:hover {
-    background: #53bab4;
-    opacity: .75;
+    background: lightgrey;
     transition-duration: 2s;
 }
 /*=============================== FOOTER ===============================*/
@@ -130,8 +131,10 @@ input[type="text"]:hover {
       text-align: center;
       font-style: italic;
       padding: 15px;
+      color: lightgrey;
   }
-  /*=============================== MEDIA QUERIES ===============================*/
+  /*=============================== MEDIA        ===============================
+  /*===============================       QUERIES ===============================*/
 @media (min-width: 768px) {
     .body-container {
         background: white;
@@ -161,12 +164,10 @@ input[type="text"]:hover {
     fieldset {
         padding: 0;
     }
-    
-
-
     .info-box {
         display: block;
         margin: 0;
+        padding: 10px;
     }
     .info {
         display: flex;
@@ -187,23 +188,13 @@ input[type="text"]:hover {
     }
     #zip {
         width: 40%;
+        margin-left: 0;
     }
-
-
-
-
-
-
-
     textarea,
     button {
         margin: 20px 0;
         width: 100%;
     }
-
-
-
-
 }
 
 
