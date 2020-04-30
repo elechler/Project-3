@@ -10,21 +10,17 @@
     margin: 0 20px;
     padding: 10px;
 }
-.title,
+.title-container,
 .form-container,
 .footer-container {
     margin: 0 20px;
     background: white;
     padding: 10px;
 }
-.info-box,
-.newsletter-box {
+.info-box {
     padding: 10px 0;
     background: #53bab4;
     border-radius: 5px;
-}
-.form-container {
-    background: yellow;
 }
 /*=============================== DECORATIVE LINES  ===============================*/
 .title-line {
@@ -74,16 +70,12 @@ input[type="tel"] {
     border-radius: 5px;
     border: none;
 }
-::placeholder {
-    text-align: right;
-    font-style: italic;
-    color: grey;
-}
-#other::placeholder {
-    text-align: left;
-}
 #state-choice {
     height: 58px;
+}
+#zip {
+    width: 55%;
+    margin-left: 10px;
 }
 textarea {
     height: 100px;
@@ -103,9 +95,13 @@ label {
     margin: 10px;
     line-height: 2.3em;   
 }
-#zip {
-    width: 55%;
-    margin-left: 10px;
+::placeholder {
+    text-align: right;
+    font-style: italic;
+    color: grey;
+}
+#other::placeholder {
+    text-align: left;
 }
 /*=============================== FOCUS , TRANSISTIONS & HOVER ===============================*/
 textarea:focus,
@@ -137,19 +133,25 @@ input[type="text"]:hover {
       padding: 15px;
       color: lightgrey;
   }
-  /*=============================== MEDIA        ===============================
-  /*===============================       QUERIES ===============================*/
+/*=============================== MEDIA        ===============================
+/*===============================       QUERIES ===============================*/
 @media (min-width: 768px) {
     .body-container {
         background: white;
     }
     .header-container,
-    .nl,
+    .nl-container,
     .footer-container {
         width: 100%;
         margin: 0;
     }
-    .title {
+    .form-container {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .title-container {
         display: block;
         margin: auto;
     }
@@ -158,12 +160,6 @@ input[type="text"]:hover {
     }
     .nl-line {
         margin: 10px 0;
-    }
-    .form-container {
-        display: block;
-        width: 80%;
-        margin: 0 auto;
-        padding: 0;
     }
     fieldset {
         padding: 0;
