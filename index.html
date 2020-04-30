@@ -17,27 +17,38 @@
                 <div class="title-line"></div>
             </div>
             
-            <div class="form">
-            <form class="form-container" action="index.html" method="post">
+            <div class="form-container">
+            <form action="index.html" method="post">
                 <fieldset>
                     <legend><h2 class="legend">Contact Information</h2></legend>
-                
-                        <label class="clearfix" for="name">Full Name</label>
-                        <input type="text" id="name" name="user_name" placeholder="Required" required="required">
-                        
-                        <label class="clearfix" for="mail">Email Address</label>
+                <div class="info-box">
+                    <div class="info">
+                        <label class="item1" for="name">Full Name</label>
+                        <input class="item2"type="text" id="name" name="user_name" placeholder="Required" required="required">
+                    </div>
+
+                    <div class="info">
+                        <label class="item1" for="mail">Email Address</label>
                         <input type="email" id="mail" name="user_email" placeholder="Required" required="required">
+                    </div>
 
-                        <label class="clearfix" for="phone">Phone Number</label>
+                    <div class="info">
+                        <label class="item1" for="phone">Phone Number</label>
                         <input type="tel" id="phone" name="user_phone">
+                    </div>
 
-                        <label class="clearfix" for="address">Street Address</label>
+                    <div class="info">
+                        <label class="item1" for="address">Street Address</label>
                         <input type="text" id="address" name="user_address">
+                    </div>
 
-                        <label class="clearfix" for="city">City</label>
+                    <div class="info">
+                        <label class="item1" for="city">City</label>
                         <input type="text" id="city" name="user_address">
-                        
-                        <label class="clearfix" for="state-choice">State</label>
+                    </div>
+
+                    <div class="info">
+                        <label class="item1" for="state-choice">State</label>
                         <select id="state-choice" name="user_state">
                             <datalist id="state-choice">
                                 <option value="">Choose State</option>
@@ -94,9 +105,13 @@
                                 <option value="WY">Wyoming</option>
                             </datalist>
                         </select>
+                    </div>
 
-                        <label class="clearfix" for="zip">Zip Code</label>
-                        <input type="text" id="zip" name="user_zip">              
+                    <div class="info">
+                        <label class="item1" for="zip">Zip Code</label>
+                        <input type="text" id="zip" name="user_zip">  
+                    </div>  
+                </div>          
                 </fieldset>
                 
                 <div class="nl">
@@ -120,7 +135,7 @@
                         
                             <button type="submit">Sign up</button>
                     </fieldset>
-                </div>
+            </div>
             </form>
           <footer class="footer-container main-footer">Copyright The Code Review</footer>
         </body>

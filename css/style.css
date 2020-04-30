@@ -17,6 +17,9 @@
     background: white;
     padding: 10px;
 }
+.info-box {
+    padding: 10px 0;
+}
 /*=============================== DECORATIVE LINES  ===============================*/
 .title-line {
     border-top: 8px solid #2d3944;
@@ -24,12 +27,12 @@
     border-right: none;
     border-left: none;
     height: 5px;
-    margin: auto;
+    margin: 15px auto;
     width: 95%;
 }
  .nl-line {
     border-bottom: 4px solid #2d3944;
-    margin: 10px 0;
+    margin: 15px auto;
  }
 /*=============================== GENERAL STYLES ===============================*/
 h2 {
@@ -48,21 +51,6 @@ p {
 fieldset {
     border: none;
 }
-.legend {
-    text-align: left;
-    padding-left: 0;
-    margin-left: 0;
-}
-label {
-    font-size: 1.1em;
-    margin: 10px;
-    line-height: 2em;
-}
-::placeholder {
-    text-align: right;
-    font-style: italic;
-    color: grey;
-}
 textarea, 
 button,
 select,
@@ -79,12 +67,16 @@ input[type="tel"] {
     border-radius: 5px;
     border: none;
 }
+::placeholder {
+    text-align: right;
+    font-style: italic;
+    color: grey;
+}
+#other::placeholder {
+    text-align: left;
+}
 #state-choice {
     height: 58px;
-}
-#zip {
-    width: 55%;
-    margin-left: 10px;
 }
 textarea {
     height: 100px;
@@ -94,6 +86,22 @@ button {
     background-color: #53bab4;
     color: white;
   }
+.legend {
+    text-align: left;
+    padding-left: 0;
+    margin-left: 0;
+}
+label {
+    font-size: 1.1em;
+    margin: 10px;
+    line-height: 2em;
+}
+/*
+#zip {
+    width: 55%;
+    margin-left: 10px;
+}
+*/
 /*=============================== FOCUS & TRANSISTIONS & HOVER ===============================*/
 #state-choice:focus,
 #zip:focus,
@@ -128,43 +136,74 @@ input[type="text"]:hover {
     .body-container {
         background: white;
     }
-    .header-container {
-        width: 100%;
-        margin: 0;
-    }
-    .title,
-    .form-container,
+    .header-container,
+    .nl,
     .footer-container {
-        margin: 0;
         width: 100%;
-        padding: 0;
+        margin: 0;
     }
-    .form {
-        width: 70%;
+    .title {
+        display: block;
         margin: auto;
     }
     .title-line {
-        width: 70%;
-        margin: auto;
+        width: 83%;
     }
-    .nl {
-        width: 100%;
+    .nl-line {
+        margin: 10px 0;
     }
-    .clearfix::after {
-        content: "";
-        clear: both;
-        display: table;
+    .form-container {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    fieldset {
+        padding: 0;
+    }
+    
+
+
+    .info-box {
+        display: block;
+        margin: 0;
+    }
+    .info {
+        display: flex;
+        flex-direction: row;      
+    }
+    .item1 {
+        width: 30%;
+        text-align: left;
+        margin: 0;
+        align-self: center;
     }
     select,
     input[type="text"], 
     input[type="tel"], 
     input[type="email"] {
-        float: right;
-        width: 60%;
-        margin: 10px;
+        width: 70%;
+        margin: 10px 0;
     }
-    
-/*==============LEFT OFF TRYING TO FIGURE OUT HOW TO GET LABELS TO THE LEFT OF THE INPUT FIELDS IN LINE WITH THEIR CORRESPONDING FIELD ===============================*/
+    #zip {
+        width: 40%;
+    }
+
+
+
+
+
+
+
+    textarea,
+    button {
+        margin: 20px 0;
+        width: 100%;
+    }
+
+
+
+
 }
 
 
