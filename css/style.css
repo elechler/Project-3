@@ -17,10 +17,14 @@
     background: white;
     padding: 10px;
 }
-.info-box {
+.info-box,
+.newsletter-box {
     padding: 10px 0;
     background: #53bab4;
     border-radius: 5px;
+}
+.form-container {
+    background: yellow;
 }
 /*=============================== DECORATIVE LINES  ===============================*/
 .title-line {
