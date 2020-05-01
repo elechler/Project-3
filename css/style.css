@@ -1,5 +1,6 @@
 /*=============================== BOXES & CONTAINERS ===============================*/
 .body-container {
+    font-family: "Merriweather";
     background: lightgrey;
 }
 .header-container {
